@@ -16,7 +16,9 @@ if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]; then
     printf " #!/bin/bash \n #============================================================================== \n #title           :$title  \n #description     :$description \n #author          :$autor \n #date            :$d \n #version         :$version \n #=============================================================================="> "$title"
     
     chmod 744 "$title"
+    exit 0
 else
     echo "Usage: mkscript.sh name description version"
+    exit 1
 fi
 
