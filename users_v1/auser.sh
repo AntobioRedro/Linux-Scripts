@@ -24,7 +24,7 @@ groupadd $group
 useradd -d $home -m -k /etc/skel -s /bin/sh -c $username -g $group $login
 passwd $login 
 
-echo "User danny added"
+echo "User "$login" added"
 
 
 
